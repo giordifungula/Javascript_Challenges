@@ -1,14 +1,14 @@
 function makeNegative (number) {
 
     // write the code for your function here
-    if( number <= 0) {
+    if( number > 0) {
+        number = number * -1;
+    } else {
         number;
-    }else {
-        number * -1;
         // if the number is positve make it negative
     }
     return number;
   }
   
   // call your function here
-  makeNegative(5);
+  makeNegative(1);
