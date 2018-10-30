@@ -68,4 +68,9 @@ if(x.length <= 3){
     x.toLowerCase();
 } else {
     x.toUpperCase();
+    for(var i =0;i < x.length;i++){
+        if(x[i]){
+            switch(a)
+        }
+    }
 }
