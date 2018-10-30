@@ -32,20 +32,31 @@ for(i = 0; i < babyNum.length; i++) {
 // Array can contain numbers or strings. X can be either. Return true if the array contains the value, false if not.
 
 var givenArr = [6,12,18]; //this array is the given array
-var val = 5; //value will check if its inside the array
-
-givenArr.forEach(function(val) {
-    if(givenArr[val]) {
-        // if 5 is inside the list
-        console.log("5 is part of the list")
-    } else {
-        console.log("5 is not inside the list");
-        // if 5 is not part of the list
-    }
-  });
-
+var val = prompt("Entere a number to check if its inside my list"); //value will check if its inside the array
+for(var i = 0;i < givenArr.length;i++){
+	console.log(givenArr[i]);
+	if(val === givenArr[i]){
+	console.log(val ,'number is inside the array');
+	}else {
+	console.log(val, 'number is not inside the array');
+	}
+}
 
 
 // write your function here
 
 // call your function here
+
+// 4. Bonus Exercise 
+// Life isn't always easy as a small word amongst big words. If only they had a code warrior to help them out...
+
+// Your task is to make all words which are 3 characters or less into capitals. You should also remove any vowels from 'long' (4 characters or more) words.
+
+// For example:
+// "The quick brown fox jumps over the lazy dog"
+
+// Should become:
+// "THE qck brwn FOX jmps vr THE lzy DOG"
+
+// For the purposes of this exercise, mid-word punctuation counts towards the character limit of a word.
+// e.g: "it's / I'm" should become: "t's / I'M"
