@@ -37,8 +37,8 @@ for(var i = 0;i < givenArr.length;i++){
 	console.log(givenArr[i]);
 	if(val === givenArr[i]){
 	console.log(val ,'number is inside the array');
-	}else {
-	console.log(val, 'number is not inside the array');
+	} else {
+	console.log(val,'number is not inside the array');
 	}
 }
 
@@ -50,7 +50,9 @@ for(var i = 0;i < givenArr.length;i++){
 // 4. Bonus Exercise 
 // Life isn't always easy as a small word amongst big words. If only they had a code warrior to help them out...
 
-// Your task is to make all words which are 3 characters or less into capitals. You should also remove any vowels from 'long' (4 characters or more) words.
+// Your task is to make all words which are 3 characters or less into capitals. 
+
+// You should also remove any vowels from 'long' (4 characters or more) words.
 
 // For example:
 // "The quick brown fox jumps over the lazy dog"
@@ -60,3 +62,10 @@ for(var i = 0;i < givenArr.length;i++){
 
 // For the purposes of this exercise, mid-word punctuation counts towards the character limit of a word.
 // e.g: "it's / I'm" should become: "t's / I'M"
+var x = prompt("enter a sentence");
+console.log(x);
+if(x.length <= 3){
+    x.toLowerCase();
+} else {
+    x.toUpperCase();
+}
