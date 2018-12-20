@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rainbow</title>
+</head>
+<body>
+    <h2>Rainbow Exercise</h2>
+    <div id='rainbow' class="container">
+        <div onclick="changeColor('red')">Red</div>
+        <div onclick="changeColor('orange')">Orange</div>
+        <div onclick="changeColor('yellow')">Yellow</div>
+        <div onclick="changeColor('green')">Green</div>
+        <div onclick="changeColor('blue')">Blue</div>
+        <div onclick="changeColor('indigo')">Indigo</div>
+        <div onclick="changeColor('violet')">Violet</div>
+    </div>
+    <script>
+        let rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+        let background = document.getElementById('rainbow');
+        function changeColor(color) {
+            background.style.backgroundColor = color;
+        }
+        
+    </script>
+</body>
+</html>
